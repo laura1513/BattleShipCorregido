@@ -18,6 +18,7 @@ public class VentanaPonerBarcos extends JFrame {
     private JButton btnExit;
     private JLabel lblShipAvailable;
     private JLabel shipAvailable;
+    private JButton help;
 
     private Tablero board;
 
@@ -102,6 +103,10 @@ public class VentanaPonerBarcos extends JFrame {
         btnExit.addActionListener(e -> {
             playerName[0] = txtPlayerName.getText();
             dispose();
+        });
+
+        help.addActionListener(h -> {
+
         });
     }
 }
