@@ -23,9 +23,13 @@ public class VentanaPrincipal extends JFrame{
     private AtomicInteger carrierId, battleshipId, destroyerId, submarineId, patrolId;
 
     public VentanaPrincipal()   {
+        Toolkit toolkit = Toolkit.getDefaultToolkit();
+        Dimension screenSize = toolkit.getScreenSize();
         add(panelPrincipal);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(new Dimension(500,500));
+        //setSize(800,800);
+        //Acoplo el tamaño de las ventanas al tamaño de la pantalla del dispositivo
+        setSize(new Dimension((int) screenSize.getWidth()*50/100, (int) screenSize.getHeight()*50/100));
         setLocationRelativeTo(null);
         setTitle("Hecho por Aitor Rodriguez Gallardo");
 

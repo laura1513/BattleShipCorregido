@@ -39,8 +39,12 @@ public class VentanaPonerBarcos extends JFrame {
      * @param playerName vector para el paso por referencia del nombre del jugador
      */
     public VentanaPonerBarcos(Tablero board, Map<String, Integer> availableShipsP1, String[] playerName) {
+        Toolkit toolkit = Toolkit.getDefaultToolkit();
+        Dimension screenSize = toolkit.getScreenSize();
         availableShips = availableShipsP1;
         this.board = board;
+        //No se puede acoplar el tamaño del juego al de la pantalla
+        //setSize((int) screenSize.getWidth()*80/100, (int) screenSize.getHeight()*70/100);
         setSize(800, 700);
         add(panelDatos);
         this.playerName = playerName;
