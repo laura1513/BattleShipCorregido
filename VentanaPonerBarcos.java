@@ -106,7 +106,7 @@ public class VentanaPonerBarcos extends JFrame {
         });
 
         help.addActionListener(h -> {
-
+            VentanaHelp vh = new VentanaHelp();
         });
     }
 }

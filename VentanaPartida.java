@@ -68,7 +68,7 @@ public class VentanaPartida extends JFrame {
                 Cell[][] cells = p2Board.getCells();
 
                 cell = cells[height][width];
-                cell.setBackground(new Color(152, 159, 187));
+
                 //cell.setBorder(new LineBorder(Color.GREEN));
                 btnAttack.setEnabled(true);
             }
